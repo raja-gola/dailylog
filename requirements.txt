@@ -1,0 +1,4 @@
+Django==1.10.2
+django-extensions==1.7.4
+requests-oauthlib==0.7.0
+python-social-auth==0.2.21

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{user}}'s logs</title>
+</head>
+<body>
+<h4>{{user}}'s logs</h4>
+<table border="1">
+    <tr>
+        <th>User</th><th>Log</th><th>Created date</th>
+    </tr>
+    <tbody>
+    {% for log in logs %}
+        <tr><td>{{log.created_by}}</td>
+            <td>{{log.log}}</td>
+            <td>{{log.created_at}}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
